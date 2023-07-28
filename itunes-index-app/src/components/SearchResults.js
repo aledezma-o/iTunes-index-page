@@ -1,3 +1,4 @@
+import '../App.css';
 import React, { useState } from 'react';
 import fetchAlbums from '../services/itunesService';
 import AlbumCard from './AlbumCard';
@@ -12,18 +13,25 @@ const SearchResults = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
-      <div className="album-list">
-        {albums.map((album) => (
-          <AlbumCard key={album.collectionId} album={album} />
-        ))}
+    <div className="App-header">
+      <div class="Search-box-button">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          
+        />
+        <button onClick={handleSearch} >
+          Search
+        </button>
       </div>
+      <div>
+          {albums.map((album) => (
+            <div className="album-list">
+              <AlbumCard key={album.collectionId} album={album} />
+            </div>
+          ))}
+        </div>
     </div>
   );
 };

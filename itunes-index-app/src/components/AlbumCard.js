@@ -1,15 +1,19 @@
 import React from "react";
+import './AlbumCard.css';
 
 const AlbumCard = ({ album }) => {
   return (
     <div className="album-card">
-      <img
-        src={album.artworkUrl100 || "default_image_url"} // Use a default image in case the album doesn't have one
-        alt={album.collectionName}
-      />
-      <h3>{album.collectionName}</h3>
-      <p>{album.artistName}</p>
-      <p>Price: {album.collectionPrice}</p>
+      <div className="album-image">
+        <img src={album.artworkUrl100} alt={album.collectionName} />
+      </div>
+      <div className="album-details">
+        <div className="album-title">{album.collectionName}</div>
+        <div className="album-text">
+          <div className="artist-name">{album.artistName}</div>
+          <div className="album-price">{album.collectionPrice}</div>
+        </div>
+      </div>
     </div>
   );
 };

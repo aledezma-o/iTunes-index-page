@@ -1,13 +1,14 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import SearchResults from './components/SearchResults';
 
 const Home = () => {
   return (
-    <div>
-      <h1>INDEX Page</h1>
+    <div class="App-header">
+      <h1>Index page</h1>
       <Link to="/search">Search Albums</Link>
+      <p>Para buscar tu álbum favorito.</p>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const AlbumCard = ({ album }) => {
         <div className="album-title">{album.collectionName}</div>
         <div className="album-text">
           <div className="artist-name">{album.artistName}</div>
-          <div className="album-price">{album.collectionPrice}</div>
+          <div className="album-price">{album.currency + " " + album.collectionPrice}</div>
         </div>
       </div>
     </div>

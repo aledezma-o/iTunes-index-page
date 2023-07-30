@@ -1,7 +1,7 @@
 .album-card {
     display: flex;
     background-color: #181a1f;
-    padding: 16px;
+    padding: 8px;
     gap: 16px;
   }
   

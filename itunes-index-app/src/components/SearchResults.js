@@ -55,7 +55,7 @@ const SearchResults = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch}>Buscar</button>
         <input
           type="checkbox"
           checked={seeAll}
@@ -63,7 +63,7 @@ const SearchResults = () => {
           id="seeAll"
         />
         <label htmlFor="seeAll"
-          style={{fontSize: '16px'}}>See All</label>
+          style={{fontSize: '16px'}}>Ver todos</label>
       </div>
       </div>
       <div>
@@ -84,14 +84,14 @@ const SearchResults = () => {
       </div>
       <div>
         <button onClick={handlePrevPage} disabled={currentPage === 1 || seeAll} id="prevButton">
-          Previous
+          Anterior
         </button>
         <button
           onClick={handleNextPage}
           disabled={currentPage === Math.ceil(albums.length / pageSize) || seeAll}
           id="nextButton"
         >
-          Next
+          Siguiente
         </button>
       </div>
     </div>

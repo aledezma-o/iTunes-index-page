@@ -6,8 +6,8 @@ import SearchResults from './components/SearchResults';
 const Home = () => {
   return (
     <div class="App-header">
-      <h1>Index page</h1>
-      <Link to="/search">Search Albums</Link>
+      <h1>Página principal</h1>
+      <Link to="/search">Buscar álbumes</Link>
       <p>Para buscar tu álbum favorito.</p>
     </div>
   );

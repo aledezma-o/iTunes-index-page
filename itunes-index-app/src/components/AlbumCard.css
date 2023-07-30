@@ -1,0 +1,40 @@
+.album-card {
+    display: flex;
+    background-color: #181a1f;
+    padding: 8px;
+    gap: 16px;
+  }
+  
+  .album-image img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+  }
+  
+  .album-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .album-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .album-text {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .artist-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .album-price {
+    font-size: 14px;
+    color: #61dafb;
+  }
+  
